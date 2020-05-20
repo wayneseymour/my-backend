@@ -7,7 +7,7 @@ cd ./crate
 
 cargo build --target wasm32-unknown-unknown --release
 
-# optional
+# optional ( to essentially treeshake things out that are not needed )
 wasm-gc target/wasm32-unknown-unknown/release/utils.wasm -o utils.gc.wasm 
 
 cd ..
